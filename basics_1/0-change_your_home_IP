@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# a script that modify localhost and facebok addresses
+sed -i '/localhost/c\127.0.0.2     localhost' /etc/hosts
+echo '8.8.8.8       facebook.com' >> /etc/hosts
